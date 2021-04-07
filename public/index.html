@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <form action="/convert" method="POST" enctype="multipart/form-data">
-    <input type="file" name="pdf" id="pdf">
-    <input type="submit"/>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #161616;
+        color: rgb(238, 238, 238);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background-color: #1c1c1c;
+        display: flex;
+        border: 1px solid #282828;
+        padding: 16px;
+        flex-direction: column;
+      }
+
+      input {
+        margin: 4px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/convert" method="POST" enctype="multipart/form-data">
+      <input type="file" name="pdf" id="pdf" />
+      <input type="submit" value="Convert PDF to SVG" />
+    </form>
+  </body>
 </html>
