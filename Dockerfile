@@ -4,3 +4,5 @@ RUN apt update
 RUN apt install -y poppler-utils pdftk zip
 
 WORKDIR /app
+
+CMD yarn run dev
